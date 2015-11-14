@@ -1,5 +1,5 @@
 FROM ivonet/wildfly-admin
-
+ 
 ENV KEYCLOAK_VERSION 1.6.1.Final
 
 WORKDIR /opt/jboss/wildfly
