@@ -2,11 +2,11 @@ FROM ivonet/wildfly-admin
 
 MAINTAINER IvoNet <webmaster@ivonet.nl>
 
-ENV KEYCLOAK_VERSION 1.6.1.Final
+ENV KEYCLOAK_VERSION 1.7.0.Final
 
 WORKDIR /opt/jboss/wildfly
 
-RUN curl -L http://downloads.jboss.org/keycloak/$KEYCLOAK_VERSION/adapters/keycloak-oidc/keycloak-wf9-adapter-dist-$KEYCLOAK_VERSION.tar.gz | tar zxv
+RUN curl -L http://downloads.jboss.org/keycloak/$KEYCLOAK_VERSION/adapters/keycloak-oidc/keycloak-wildfly-adapter-dist-$KEYCLOAK_VERSION.tar.gz | tar zxv
 
 WORKDIR /opt/jboss
 
