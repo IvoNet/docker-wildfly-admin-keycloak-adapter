@@ -4,7 +4,6 @@ This image extends the ivonet/wildfly-admin image and extends the installed wild
 The application.xml is also adjusted for the standalone profile to enable the keycloak security provider though the installed adapter.
 
 
-
 Tip:
 You can make deployments easy during development if you start the server with something like the following commands.
 
@@ -33,3 +32,4 @@ Now if you start the wildfly instance with somehting like the following command 
 ```bash
 docker run --name ivonet-wildfly -p 8080:8080 -p 9990:9990 -v $(pwd)/artifact:/opt/jboss/wildfly/standalone/deployments/ -d ivonet/wildfly-admin-keycloak-adapter
 ```
+
